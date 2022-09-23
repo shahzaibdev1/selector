@@ -86,9 +86,7 @@ function onListening() {
   console.log("Listening on " + bind);
 
   mongoose
-    .connect(
-      "mongodb+srv://admin:react12@cluster0.5ubix.mongodb.net/?retryWrites=true&w=majority"
-    )
+    .connect(process.env.MONGODB_URI)
     .then(() => {
       console.log("Database connection established");
     })
