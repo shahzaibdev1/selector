@@ -1,5 +1,0 @@
-class ApiManager {
-  constructor() {
-    
-  }
-}
